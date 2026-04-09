@@ -1,6 +1,6 @@
 # Pitch Perfect
 
-**Try It Out:** [Link to Hosted App](#) *(Replace this with your hosted link)*
+**Try It Out:** [https://pitchperfect-chi.vercel.app/](#)
 
 Pitch Perfect is a real-time pitch detection web app that compares your live vocal pitch against a reference track's pitch data.
 
