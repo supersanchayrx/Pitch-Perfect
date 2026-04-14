@@ -2,7 +2,7 @@
 
 **Try It Out:** https://pitchperfect-chi.vercel.app/
 
-**Better Ui Version:**
+**Better Ui Version:** https://pitch-perfect-better-ui.vercel.app/
 
 Pitch Perfect is a real-time pitch detection web app that compares your live vocal pitch against a reference track's pitch data.
 
