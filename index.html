@@ -1,28 +1,96 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <title>Audio Test</title>
-    <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pitch Perfect</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-fixed": "#00cffc",
+            "error-dim": "#d7383b",
+            "on-tertiary-container": "#f8f1ff",
+            "outline-variant": "#46484a",
+            "surface": "#0c0e10",
+            "primary-fixed-dim": "#00c0ea",
+            "error": "#ff716c",
+            "inverse-surface": "#f9f9fc",
+            "tertiary": "#ac89ff",
+            "tertiary-container": "#7000ff",
+            "secondary-fixed": "#ffbeeb",
+            "tertiary-fixed": "#bda1ff",
+            "on-surface": "#eeeef0",
+            "on-primary-container": "#004050",
+            "on-secondary": "#42003a",
+            "tertiary-fixed-dim": "#b190ff",
+            "secondary-fixed-dim": "#ffa8e7",
+            "on-tertiary-fixed-variant": "#4700a7",
+            "surface-dim": "#0c0e10",
+            "inverse-on-surface": "#545557",
+            "primary-container": "#00cffc",
+            "secondary": "#ff59e3",
+            "error-container": "#9f0519",
+            "primary": "#69daff",
+            "on-secondary-container": "#fff5f8",
+            "surface-container-low": "#111416",
+            "surface-bright": "#292c30",
+            "secondary-container": "#ad009b",
+            "surface-container-lowest": "#000000",
+            "on-background": "#eeeef0",
+            "on-secondary-fixed-variant": "#950085",
+            "on-surface-variant": "#aaabad",
+            "surface-tint": "#69daff",
+            "outline": "#747578",
+            "inverse-primary": "#006880",
+            "on-primary-fixed": "#002a35",
+            "on-tertiary": "#290067",
+            "on-tertiary-fixed": "#1f0052",
+            "secondary-dim": "#ff59e3",
+            "tertiary-dim": "#874cff",
+            "surface-container": "#171a1c",
+            "surface-variant": "#232629",
+            "on-error": "#490006",
+            "background": "#0c0e10",
+            "primary-dim": "#00c0ea",
+            "on-error-container": "#ffa8a3",
+            "surface-container-high": "#1d2023",
+            "on-secondary-fixed": "#640059",
+            "on-primary": "#004a5d",
+            "on-primary-fixed-variant": "#004a5c",
+            "surface-container-highest": "#232629"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Space Grotesk"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          }
+        },
+      },
+    }
+  </script>
 </head>
 
 <body>
-    <input type="file" id="audioInput" accept=".wav,audio/*">
-    <button type="button" id="fetchbutton">Fetch Audio</button>
-    <button type="button" id="pitchButton">Synthesize Pitch</button>
-    <button type="button" id="singButton">Sing Along </button>
-    <button type="button" id="stopSingAlongButton">Stop Sing Along</button>
-    <br>
-    <canvas id="pitchChart"></canvas>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="test.js"></script>
-
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>

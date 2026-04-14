@@ -1,0 +1,30 @@
+.glass-panel {
+  background: rgba(29, 32, 35, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(70, 72, 74, 0.2);
+}
+
+.neon-glow-primary {
+  filter: drop-shadow(0 0 8px rgba(105, 218, 255, 0.5));
+}
+
+.neon-glow-secondary {
+  filter: drop-shadow(0 0 8px rgba(255, 89, 227, 0.5));
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #111416;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #232629;
+  border-radius: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
