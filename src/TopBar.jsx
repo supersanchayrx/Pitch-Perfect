@@ -19,9 +19,14 @@ export default function TopBar({ onFileSelect, onLoadAudio, onSingAlong, onStopS
 
                     {/* User Profile Icons */}
                     <div className="flex gap-2">
-                        <button className="p-2 text-on-surface-variant hover:bg-surface-variant rounded-full transition-all">
-                            <span className="material-symbols-outlined">Star this repo on GitHub ⭐</span>
-                        </button>
+                        <a 
+                            href="https://github.com/supersanchayrx/Pitch-Perfect/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="px-4 py-2 text-on-surface-variant bg-surface-container-high border border-outline-variant/20 hover:bg-surface-variant hover:text-primary rounded-lg transition-all font-headline text-sm font-semibold flex items-center gap-2"
+                        >
+                            ⭐ Star this repo on GitHub
+                        </a>
                     </div>
                 </div>
 
